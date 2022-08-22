@@ -1,11 +1,13 @@
+$theme-colors: (
+        "primary": green,
+        "secondary":  purple,
+        "danger": #ff4136
+);
+
 @import '../../node_modules/bootstrap/scss/bootstrap';
 
 
-$theme-colors: (
-        primary: $purple
-);
-
-.card  {
+.card {
   margin: 5px 0;
   padding: 5px;
 }
@@ -14,3 +16,5 @@ $theme-colors: (
   height: 40px;
   margin-bottom: 5px;
 }
+
+

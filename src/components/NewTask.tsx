@@ -15,7 +15,7 @@ const initialState: Task = {
 
 export const tasksDB: Task[] = [
     {
-        text: 'Push your project on GitHub',
+        text: 'Push your project to GitHub',
         complete: false,
         deadline: '2022-08-12'
     },
