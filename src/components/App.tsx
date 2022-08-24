@@ -23,7 +23,7 @@ function App() {
         updateList(newTasks);
     }
 
-    const today = new Date ();
+    const today = new Date();
 
     return (
         <div className="row d-flex justify-content-center mt-5">
@@ -37,11 +37,13 @@ function App() {
                     list.map((task: Task, index: number) => (
                         <div className="card">
                             <div className="row" key={index}>
-                                <div className="col-md-auto my-auto"><input type="checkbox" onChange={() => toggleTask(index)}/></div>
+                                <div className="col-md-auto my-auto"><input type="checkbox"
+                                                                            onChange={() => toggleTask(index)}/></div>
                                 <div className="col my-auto"
-                                    style={{textDecoration: task.complete ? "line-through" : "none"}}>{task.text}
+                                     style={{textDecoration: task.complete ? "line-through" : "none"}}>{task.text}
                                 </div>
-                                <div className="col col-lg-4 my-auto" style={{color: (today.toISOString().split('T')[0] > task.deadline) ? 'red' : 'black'}}>
+                                <div className="col col-lg-4 my-auto"
+                                     style={{color: (today.toISOString().split('T')[0] > task.deadline) ? 'red' : 'black'}}>
                                     {task.deadline}
                                 </div>
                                 <div className="col col-lg-2 h-100">

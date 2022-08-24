@@ -1,8 +1,6 @@
 $theme-colors: (
         "primary": green,
-        "secondary":  purple,
-        "danger": #ff4136
-);
+      );
 
 @mixin parallax-background($file) {
   background: url($file) no-repeat center center fixed;
@@ -23,13 +21,13 @@ $center-margin: 0px auto;
 
 $parallax-height: 100vh;
 $center-margin: 0px auto;
+$theme: #2e3738;
 
 html,
 body {
   margin: 0;
   padding: 0;
-  font-family: Roboto;
-  color: #2e3738;
+  color: $theme;
 }
 
 #first {
@@ -52,7 +50,7 @@ body {
     font-family: 'Bitter', serif;
     letter-spacing: 0.06em;
     font-size: 120px;
-    color: $primary;
+    color: $theme;
     opacity: 0.7;
     text-align: center;
   }
