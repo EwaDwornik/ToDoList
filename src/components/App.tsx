@@ -27,7 +27,11 @@ function App() {
 
     return (
         <div className="row d-flex justify-content-center mt-5">
-            <div className='col-md-6'>
+            <div id="first">
+                <h1 className="title">Make a plan</h1>
+            </div>
+
+            <div className='col-md-6 todo'>
                 <NewTask props={addTask}/>
                 {
                     list.map((task: Task, index: number) => (
@@ -48,6 +52,9 @@ function App() {
                             </div>
                         </div>
                     ))}
+            </div>
+            <div id="second">
+                <h1 className="title">Stick to the plan</h1>
             </div>
         </div>
     )
