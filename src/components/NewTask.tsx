@@ -1,5 +1,4 @@
 import React, {useState} from 'react';
-import "../style/App.css";
 
 export interface Task {
     text: string;
